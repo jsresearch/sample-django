@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  scan_example:
+    runs-on: ubuntu-latest
+    name: Salus Security Scan Example
+    steps:
+    - uses: actions/checkout@v1
+    - name: Salus Security Scan
+      id: salus_scan
+      uses: federacy/scan-action@0.1.2-pre
+      with:
+        report_uri: "https://www.securedevelopment.com/collector/salus_scans/499fc124-277b-480e-bf82-11eefdafea2b"
+        active_scanners: "\n  - Brakeman"
+        enforced_scanners: "\n  - Brakeman"
