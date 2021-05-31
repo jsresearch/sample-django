@@ -13,3 +13,4 @@ jobs:
         report_uri: "https://www.securedevelopment.com/collector/salus_scans/499fc124-277b-480e-bf82-11eefdafea2b"
         active_scanners: "\n  - Bandit"
         enforced_scanners: "\n  - Bandit"
+
