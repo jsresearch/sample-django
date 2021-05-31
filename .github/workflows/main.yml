@@ -11,5 +11,5 @@ jobs:
       uses: federacy/scan-action@0.1.2-pre
       with:
         report_uri: "https://www.securedevelopment.com/collector/salus_scans/499fc124-277b-480e-bf82-11eefdafea2b"
-        active_scanners: "\n  - All"
-        enforced_scanners: "\n  - All"
+        active_scanners: "\n  - all"
+        enforced_scanners: "\n  - all"
